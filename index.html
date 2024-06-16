@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapitálu milostí</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Kapitálu milostí <br>pro naši generální kapitula</h1>
+    <h2>Náš zakladatel nám říká: "Schönstattské padá nebo stoupá podle hlavního kapitálu milostí."</h2>
+    <div id="main-container">
+        <div id="image-container">
+            <img src="SantuarioIFS.jpg" alt="Santuario IFS" id="imagen">
+            <div id="container"></div>
+        </div>
+    </div>
+        <script>// script que genera div en forma automatica
+            const totalCells = 117;
+            let html = '';
+            for (let i = 1; i <= totalCells; i++) {
+              html += `<div class="cell" id="cell${i}"></div>\n`;
+            }
+            document.getElementById('container').innerHTML = html;
+          </script> 
+    </div>
+    <div id="counter-container">
+        <p>Kapitálu milostí: <span id="cell-counter">0</span></p>
+    </div>
+</div>
+          <script src="script.js"></script>
+        
+</body>
+
+</html>
